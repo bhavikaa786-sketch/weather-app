@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="script.js" defer></script>
+
+    <!-- use font awesome website for icons -->
+
+
+
+
+</head>
+
+<body>
+    <main class="main-container">
+
+        <header class="input-container">
+            <input type="text" class="city-input" placeholder="Search City">
+            <button class="search-btn" Search Icon>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+
+
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location" Location Icon>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4 class="country-txt">Delhi</h4>
+                </div>
+
+                <h5 class="current-date-txt regular-txt">July 23, 2025</h5>
+            </div>
+
+            <div class="weather-summary-container">
+
+                <img src="weather assets/sunny day.png" alt="clear sky image" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+
+                    <h3 class="condition-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item" Water Droplet Icon>
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="condition-info">
+                        <span id="humidity"></span>
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+
+                <div class="weather-conditions-container">
+                    <div class="condition-item" Wind Icon>
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="condition-info">
+                            <h5 class="regular-txt">Wind Speed</h5>
+                            <h5 class="wind-value-txt">2 m/s</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">July 23, </h5>
+                    <img src="weather assets/Thunderstorm.png" alt="Thunderstorm image" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">July 23, </h5>
+                    <img src="weather assets/Thunderstorm.png" alt="Thunderstorm image" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">July 23, </h5>
+                    <img src="weather assets/Thunderstorm.png" alt="Thunderstorm image" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">July 23, </h5>
+                    <img src="weather assets/Thunderstorm.png" alt="Thunderstorm image" class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img src="weather assets/search image.png" alt="">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city.
+                </h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="weather assets/erroorr-removebg-preview.png" alt="">
+            <!-- <img src="https://img.freepik.com/premium-vector/error-404-found-glitch-effect_8024-5.jpg" alt=""> -->
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city.
+                </h4>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
